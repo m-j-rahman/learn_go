@@ -1,1 +1,1 @@
-find .//. ! -name . -print | grep -c //
+ls -q | wc -l
