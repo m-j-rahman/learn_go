@@ -1,1 +1,1 @@
-find . -name '*sh'| sort -r | sed 's/\.[^.]*$//' | sed 's/.*\///'
+find . -name '*sh'| sed 's/\.[^.]*s//' | sed 's/.*\///' | sort -r 
