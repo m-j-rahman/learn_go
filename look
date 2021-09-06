@@ -1,1 +1,1 @@
-find -name "a*" -o -name "*z" -o -name "z* -a a*"
+find \( -name 'a*' -or -name '*z' \) -or -name 'z*' -and -name '*a'
