@@ -1,1 +1,1 @@
-ls -l | awk 'NR % 2 {print} !(NR % 2) && /pattern/ {print}'
+ls -l | awk 'NR %2==0'
