@@ -5,6 +5,6 @@ func NRune(s string, n int) rune {
 	if n < 0 || n > (len(strArr)) {
 		return 0
 	} else {
-		return rune(strArr[n-1])
+		return strArr[n-1]
 	}
 }
