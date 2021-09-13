@@ -1,6 +1,4 @@
-package main
-
-import "github.com/01-edu/z01"
+package piscine
 
 func NRune(s string, n int) rune {
 	strArr := []rune(s)
@@ -9,13 +7,4 @@ func NRune(s string, n int) rune {
 	} else {
 		return rune(strArr[n-1])
 	}
-}
-
-func main() {
-	z01.PrintRune(NRune("Hello!", 3))
-	z01.PrintRune(NRune("Salut!", 2))
-	z01.PrintRune(NRune("Bye!", -1))
-	z01.PrintRune(NRune("Bye!", 3))
-	z01.PrintRune(NRune("Ola!", 8))
-	z01.PrintRune('\n')
 }
