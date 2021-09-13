@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func IterativePower(nb int, power int) int {
 	result := 1
@@ -13,8 +11,4 @@ func IterativePower(nb int, power int) int {
 		}
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(IterativePower(8, 8))
 }
