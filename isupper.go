@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func IsUpper(s string) bool {
 	for _, char := range s {
@@ -9,9 +7,4 @@ func IsUpper(s string) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-	fmt.Println(IsUpper("HELLO"))
-	fmt.Println(IsUpper("HELLO!"))
 }
