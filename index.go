@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func Index(s string, toFind string) int {
 	str := []rune(s)
@@ -19,10 +17,4 @@ func Index(s string, toFind string) int {
 		}
 	}
 	return -1
-}
-
-func main() {
-	fmt.Println(Index("Hello!", "l"))
-	fmt.Println(Index("Salut!", "alu"))
-	fmt.Println(Index("Ola!", "hOl"))
 }
