@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func AlphaCount(s string) int {
 	result := []rune(s)
@@ -12,10 +10,4 @@ func AlphaCount(s string) int {
 		}
 	}
 	return count
-}
-
-func main() {
-	s := "Hello 78 World!    4455 /"
-	nb := AlphaCount(s)
-	fmt.Println(nb)
 }
