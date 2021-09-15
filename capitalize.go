@@ -1,14 +1,18 @@
-package piscine
+package main
+
+import (
+	"fmt"
+)
 
 func Capitalize(s string) string {
 	str := []rune(s)
 	for i := 0; i < len(s); i++ {
-		if str[i] >= 'A' && str[i] <= 'Z' {
+		if str[i] >= 65 && str[i] <= 90 {
 			str[i] = str[i] + 32
 		}
 	}
 	char := []rune(string(str))
-	for j := 0; j <= len(s)-1; j++ {
+	for j := 0; j < len(s); j++ {
 		if j == 0 {
 			if char[j] >= 97 && char[j] <= 122 {
 				char[j] = char[j] - 32
@@ -19,4 +23,8 @@ func Capitalize(s string) string {
 		}
 	}
 	return string(char)
+}
+
+func main() {
+	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
 }
