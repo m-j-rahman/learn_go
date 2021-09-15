@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package piscine
 
 func Capitalize(s string) string {
 	str := []rune(s)
@@ -23,8 +19,4 @@ func Capitalize(s string) string {
 		}
 	}
 	return string(char)
-}
-
-func main() {
-	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
 }
