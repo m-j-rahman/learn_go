@@ -11,7 +11,7 @@ func main() {
 	var index int
 	for i := len(argument) - 1; i > 0; i-- {
 		if argument[i] == '/' {
-			index = 1
+			index = 2
 			break
 		}
 	}
