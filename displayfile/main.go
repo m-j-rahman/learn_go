@@ -7,25 +7,22 @@ import (
 )
 
 func main() {
-	arguments := os.Args[1:]
+	fileName := "quest8.txt"
 
-	length := 0
-	for i := range arguments {
-		length = i + 1
-	}
-
-	if length > 1 {
-		fmt.Println("Too many arguments")
-	} else if length == 0 {
+	if len(os.Args) < 2 {
 		fmt.Println("File name missing")
-	} else if arguments[0] == "quest8.txt" {
-
-		content, err := ioutil.ReadFile(arguments[0])
-		if err != nil {
-			fmt.Println(err.Error())
-			return
-		}
-		fmt.Println(string(content))
-
+		return
 	}
+	if len(os.Args) > 2 {
+		fmt.Println("Too many arguments")
+		return
+	}
+
+	data, err := ioutil.ReadFile(fileName)
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+
+	fmt.Print(string(data))
 }
