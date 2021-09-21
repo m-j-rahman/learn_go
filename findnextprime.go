@@ -8,10 +8,10 @@ func FindNextPrime(nb int) int {
 }
 
 func IsPrime2(nb int) bool {
-	if nb < 2 {
+	if nb <= 1 {
 		return false
-	}
-	for i := 2; i < nb/2; i++ {
+	
+	for i := 2; i <= nb/2; i++ {
 		if nb%i == 0 {
 			return false
 		}
