@@ -1,11 +1,20 @@
 package piscine
 
-func Compact(ptr *[]string, length int) int {
+func Compact(ptr *[]string) int {
+	length := 0
+	for _, s := range *ptr {
+		if s != "" {
+			length++
+		}
+	}
 	count := 0
-	for i := 0; i < length; i++ {
-		if (*ptr)[i] != " " {
+	array := make([]string, length)
+	for _, s := range *ptr {
+		if s != "" {
+			array[count] = s
 			count++
 		}
 	}
-	return count
+	*ptr = array
+	return length
 }
