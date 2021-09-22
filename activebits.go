@@ -1,10 +1,9 @@
 package piscine
 
-func ActiveBits(n int) uint {
-	count := 0
-	for n > 0 {
-		count += n & 1
-		n >>= 1
+func ActiveBits(n int) (total int) {
+	for ; n > 1; n /= 2 {
+		total += n % 2
 	}
-	return uint(count)
+	total += n
+	return
 }
