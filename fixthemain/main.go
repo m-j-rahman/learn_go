@@ -6,11 +6,10 @@ type Door struct {
 	state bool
 }
 
-func PrintStr(str string) {
-	for _, s := range str {
-		z01.PrintRune(s)
+func PrintStr(s string) {
+	for _, r := range s {
+		z01.PrintRune(r)
 	}
-	z01.PrintRune(10)
 }
 
 func OpenDoor(ptrDoor *Door) bool {
