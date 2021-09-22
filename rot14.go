@@ -20,4 +20,5 @@ func Rot14(str string) string {
 		}
 		result += string(arrayRune[i])
 	}
+	return result
 }
