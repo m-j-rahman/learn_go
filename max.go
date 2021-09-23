@@ -1,10 +1,10 @@
 package piscine
 
-func Max(arr []int) int {
-	max := arr[0]
-	for i := 1; i < len(arr); i++ {
-		if max < arr[i] {
-			max = arr[i]
+func Max(a []int) int {
+	max := 0
+	for i := 0; i < len(a); i++ {
+		if max < a[i] {
+			max = a[i]
 		}
 	}
 	return max
